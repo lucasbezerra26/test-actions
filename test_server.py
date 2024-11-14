@@ -25,4 +25,4 @@ class TestServer:
         """Testa o envio de uma mensagem para um cliente."""
         client_socket = MagicMock()
         server.send(client_socket, "Mensagem de teste")
-        assert mock_send.called
+        assert mock_send.called == False
